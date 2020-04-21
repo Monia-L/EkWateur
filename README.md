@@ -7,7 +7,8 @@ Tu as deux jours pour réaliser ce projet perso. Si tu as des empêchements qui 
 Voici ce que l’on attend de toi :
 
 1. Clone ce repository
-2. Crée un service pour fetcher les données de consommation d’un utilisateur depuis l’API avec fetch (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+2. Crée une branche avec tes noms et prenoms (date_du_jour/NOM_PRENOM)
+3. Crée un service pour fetcher les données de consommation d’un utilisateur depuis l’API avec fetch (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
    Les routes suivantes sont à ta disposition :
 
 - https://5e9ed3cdfb467500166c47bb.mockapi.io/api/v1/meter/
@@ -16,15 +17,19 @@ Voici ce que l’on attend de toi :
 
 Pour information, un POD (point of delivery) est l'équivalent d'un PDL (point de livraison) et permet d'identifier un compteur
 
-3. Crée une page pour afficher ces données dans un tableau simple. Il faudra permettre à l’utilisateur d’afficher soit ses données de consommation de gaz, soit d’électricité. Tu peux afficher les informations qui te semblent pertinentes.
-4. Permets à l'utilisateur de filtrer ses données par année.
-5. Stylise ce tableau. Tu peux t’inspirer de notre site ekwateur.fr pour ce qui est des couleurs, des ombres, et du style graphique en général.
+4. Crée une page pour afficher ces données dans un tableau simple. Il faudra permettre à l’utilisateur d’afficher soit ses données de consommation de gaz, soit d’électricité. Tu peux afficher les informations qui te semblent pertinentes.
+5. Permets à l'utilisateur de filtrer ses données par année.
+6. Stylise ce tableau. Tu peux t’inspirer de notre site ekwateur.fr pour ce qui est des couleurs, des ombres, et du style graphique en général.
 
 Il n’est pas indispensable de réaliser toutes ces étapes. Un code clair, lisible, testé, une bonne documentation sont préférables à un exercice fini mais moins rigoureux.
 
 Toute initiative faisant preuve de tes bonnes pratiques sera la bienvenue.
 
 Si certaines parties de l’exercice ne te paraissent pas claires ou que tu as des questions sur celui-ci, nous sommes là pour y répondre. Nous t’encourageons même à poser des questions plutôt que de rester bloqué(e) et de ne pas être sûr de ce qui t’est demandé.
+
+Et biensur, pense à push régulièrement tes modifications sur ta branche.
+
+Bon courage
 
 ----------------------------------
 
