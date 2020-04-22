@@ -15,8 +15,6 @@ Voici ce que l’on attend de toi :
 - https://5e9ed3cdfb467500166c47bb.mockapi.io/api/v1/meter/1/gas
 - https://5e9ed3cdfb467500166c47bb.mockapi.io/api/v1/meter/2/electricity
 
-Pour information, un POD (point of delivery) est l'équivalent d'un PDL (point de livraison) et permet d'identifier un compteur
-
 4. Crée une page pour afficher ces données dans un tableau simple. Il faudra permettre à l’utilisateur d’afficher soit ses données de consommation de gaz, soit d’électricité. Tu peux afficher les informations qui te semblent pertinentes.
 5. Permets à l'utilisateur de filtrer ses données par année.
 6. Stylise ce tableau. Tu peux t’inspirer de notre site ekwateur.fr pour ce qui est des couleurs, des ombres, et du style graphique en général.
@@ -27,15 +25,22 @@ Toute initiative faisant preuve de tes bonnes pratiques sera la bienvenue.
 
 Si certaines parties de l’exercice ne te paraissent pas claires ou que tu as des questions sur celui-ci, nous sommes là pour y répondre. Nous t’encourageons même à poser des questions plutôt que de rester bloqué(e) et de ne pas être sûr de ce qui t’est demandé.
 
-Et biensur, pense à push régulièrement tes modifications sur ta branche.
+**Et bien sûr, pense à push régulièrement tes modifications sur ta branche.**
 
 Bon courage
+
+## Annexe
+- POD (point of delivery) : équivalent d'un PDL (point de livraison) et permet d'identifier un compteur
+- Index : série de chiffres que tu peux retrouver sur ton compteur d'électricité et de gaz. L'index se lit en kWh (Kilowattheure) et permet de mesurer votre consommation d'énergie en indiquant avec précision combien de kWh ont été consommés à date. 
+- Heures pleines et heures creuses : Pour l'électricité, il est possible de choisir entre 2 plages tarifaires, à savoir, un tarif en "heures pleines et heures creuses" et un tarif unique qu'importe l'heure. Le gaz ne permet pas de choisir sa plage.
+- IndexHigh : il s'agit de l'index pour les heures pleines
+- IndexLow : il s'agit de l'index pour les heures creuses
 
 ----------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
