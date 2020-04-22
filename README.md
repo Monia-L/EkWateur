@@ -34,8 +34,8 @@ Bon courage
 - POD (point of delivery) : équivalent d'un PDL (point de livraison) et permet d'identifier un compteur
 - Index : série de chiffres que tu peux retrouver sur ton compteur d'électricité et de gaz. L'index se lit en kWh (Kilowattheure) et permet de mesurer votre consommation d'énergie en indiquant avec précision combien de kWh ont été consommés à date. 
 - Heures pleines et heures creuses : Pour l'électricité, il est possible de choisir entre 2 plages tarifaires, à savoir, un tarif en "heures pleines et heures creuses" et un tarif unique qu'importe l'heure. Le gaz ne permet pas de choisir sa plage.
-- IndexHigh : il s'agit de l'index pour les heures pleines
-- IndexLow : il s'agit de l'index pour les heures creuses
+- IndexHigh : il s'agit de l'index pour les heures pleines (électricité et gaz)
+- IndexLow : il s'agit de l'index pour les heures creuses (électricité seulement).
 
 ----------------------------------
 
