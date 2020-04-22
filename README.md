@@ -30,6 +30,7 @@ Si certaines parties de l’exercice ne te paraissent pas claires ou que tu as d
 Bon courage
 
 ## Annexe
+- Meter : il s'agit du compteur. Dans notre test, il y a donc 2 compteurs, un pour l'electricité et un autre pour le gaz.
 - POD (point of delivery) : équivalent d'un PDL (point de livraison) et permet d'identifier un compteur
 - Index : série de chiffres que tu peux retrouver sur ton compteur d'électricité et de gaz. L'index se lit en kWh (Kilowattheure) et permet de mesurer votre consommation d'énergie en indiquant avec précision combien de kWh ont été consommés à date. 
 - Heures pleines et heures creuses : Pour l'électricité, il est possible de choisir entre 2 plages tarifaires, à savoir, un tarif en "heures pleines et heures creuses" et un tarif unique qu'importe l'heure. Le gaz ne permet pas de choisir sa plage.
