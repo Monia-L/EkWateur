@@ -2,7 +2,7 @@
 
 L'objectif de cet exercice est de créer une application d’affichage de données en utilisant une API que l’on met à ta disposition. Tu devras ainsi afficher des données de consommation d’un client ekWateur. Plus d’informations sont regroupées ci-dessous.
 
-Tu as deux jours pour réaliser ce projet perso. Si tu as des empêchements qui ne te permettent pas de suffisamment avancer, n’hésite pas à nous en faire part.
+Tu as trois jours pour réaliser ce projet perso. Si tu as des empêchements qui ne te permettent pas de suffisamment avancer, n’hésite pas à nous en faire part.
 
 Voici ce que l’on attend de toi :
 
