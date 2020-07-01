@@ -25,6 +25,11 @@ Toute initiative faisant preuve de tes bonnes pratiques sera la bienvenue.
 
 Si certaines parties de l’exercice ne te paraissent pas claires ou que tu as des questions sur celui-ci, nous sommes là pour y répondre. Nous t’encourageons même à poser des questions plutôt que de rester bloqué(e) et de ne pas être sûr de ce qui t’est demandé.
 
+Points d'attention supplémentaires : 
+- Le package manager utilisé ici est yarn et non pas npm
+- Le client doit être en mesure de voir son tableau sur desktop et sur mobile
+- Toute autre feature non demandée (de type graphique par ex) et qui apporte un plus à l'utilisateur est bien vue
+
 **Et bien sûr, pense à push régulièrement tes modifications sur ta branche.**
 
 Bon courage
