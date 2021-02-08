@@ -13,11 +13,18 @@ suffisamment avancer, n’hésite pas à nous en faire part, nous adapterons le 
 
 L'objectif de cet exercice est de créer une application d’affichage de données en utilisant une API que l’on met à ta disposition. Tu devras ainsi afficher des données de consommation d’un client ekWateur. Plus d’informations sont regroupées ci-dessous.
 
+## Comment soumettre ton travail
+
+1. Faire un git clone de ce repository
+2. Travailler directement sur la branche master en local
+3. Créer un public repository sur un espace à toi (et non un fork sur l'espace gitlab ekWateur)
+4. Pousser ton travail sur ton repository
+
+Enfin, nous communiquer par mail le lien de ton repository
+
 ## Instructions
 
-1. Clone ce repository
-2. Crée une branche avec tes noms et prenoms (date_du_jour/NOM_PRENOM)
-3. Crée un service pour fetcher les données de consommation d’un utilisateur depuis l’API avec fetch (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) ou autre
+1. Créer un service pour fetcher les données de consommation d’un utilisateur depuis l’API avec fetch (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) ou autre
 
    Les routes suivantes sont à ta disposition :
 
@@ -25,10 +32,10 @@ L'objectif de cet exercice est de créer une application d’affichage de donné
 - https://5e9ed3cdfb467500166c47bb.mockapi.io/api/v1/meter/1/gas (permet de récupérer les données d'un POD en fonction de son id et de son énergie)
 - https://5e9ed3cdfb467500166c47bb.mockapi.io/api/v1/meter/2/electricity (permet de récupérer les données d'un POD en fonction de son id et de son énergie)
 
-4. Crée une page pour afficher ces données dans un tableau simple. Il faudra permettre à l’utilisateur d’afficher soit ses données de consommation de gaz, soit d’électricité. Tu peux afficher les informations qui te semblent pertinentes.
-5. Permets à l'utilisateur de filtrer ses données par année.
-6. Stylise ce tableau. Tu peux t’inspirer de notre site ekwateur.fr pour ce qui est des couleurs, des ombres, et du style graphique en général.
-7. __Bonus__ - Tu peux au choix : 
+2. Créer une page pour afficher ces données dans un tableau simple. Il faudra permettre à l’utilisateur d’afficher soit ses données de consommation de gaz, soit d’électricité. Tu peux afficher les informations qui te semblent pertinentes.
+3. Permettre à l'utilisateur de filtrer ses données par année.
+4. Styliser ce tableau. Tu peux t’inspirer de notre site ekwateur.fr pour ce qui est des couleurs, des ombres, et du style graphique en général.
+5. __Bonus__ - Tu peux au choix : 
     - Permettre à l'utilisateur de trier ses données par date ou index de consomation
     - Afficher dans le tableau l'évolution en pourcentage de la consommation mensuelle par rapport au mois précédent (pour l'électricité, on prendra la somme `indexHigh + indexLow`)
 
