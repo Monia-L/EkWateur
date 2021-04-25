@@ -1,0 +1,70 @@
+// Breakpoints
+$mobile: 480;
+$tablet: 768;
+$laptop: 992;
+$desktop: 1200;
+$bigscreen: 1600;
+// Usage: $unit (px, em, rem etc). Default unit is pixels.
+$unit: px;
+
+// Content containers
+$mobileContainer: 460;
+$tabletContainer: 748;
+$laptopContainer: 960;
+$desktopContainer: 1140;
+
+// Breakpoint Mixins
+
+@mixin smallscreen {
+  @media only screen and (max-width: #{$mobile}#{$unit}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (min-width: #{$mobile}#{$unit}) {
+    @content;
+  }
+}
+
+@mixin mobile-tablet {
+  @media only screen and (min-width: #{$mobile}#{$unit}) and (max-width: #{$tablet}#{$unit}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet}#{$unit}) {
+    @content;
+  }
+}
+
+@mixin tablet-laptop {
+  @media only screen and (min-width: #{$tablet}#{$unit}) and (max-width: #{$laptop}#{$unit}) {
+    @content;
+  }
+}
+
+@mixin max-laptop {
+  @media only screen and (max-width: #{$laptop}#{$unit}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: #{$laptop}#{$unit}) {
+    @content;
+  }
+}
+
+@mixin laptop-desktop {
+  @media only screen and (min-width: #{$laptop}#{$unit}) and (max-width: #{$desktop}#{$unit}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop}#{$unit}) {
+    @content;
+  }
+}

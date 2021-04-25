@@ -1,0 +1,13 @@
+//theme
+@import '../styles/theme/colors.scss';
+
+// variables
+@import '../styles/theme/breakpoint.scss';
+
+
+// style components
+@import '../styles/components/User/detail.scss';
+
+//style pages
+@import '../styles/pages/home.scss';
+@import '../styles/pages/detail.scss';
