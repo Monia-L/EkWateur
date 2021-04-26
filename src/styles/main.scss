@@ -4,9 +4,10 @@
 // variables
 @import '../styles/theme/breakpoint.scss';
 
-
 // style components
 @import '../styles/components/User/detail.scss';
+@import '../styles/components/toggle-switch.scss';
+@import '../styles/components/table.scss';
 
 //style pages
 @import '../styles/pages/home.scss';
