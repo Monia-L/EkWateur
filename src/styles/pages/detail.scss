@@ -1,0 +1,20 @@
+.details-page__container {
+  background: url("../../asset/img/detail-user.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: auto 50%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  position: relative;
+  min-width: 400px;
+  min-height: 60rem;
+
+  @include laptop {
+    flex-direction: row;
+    align-items: flex-start;
+    background-size: auto 100%;
+    background-attachment: fixed;
+  }
+}

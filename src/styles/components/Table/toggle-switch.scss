@@ -1,0 +1,35 @@
+.toggle__container {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  input[type=radio]+label {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    color: $white;
+    background-color: $grey;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    margin: 5px;
+  }
+
+  input[type=radio].electricity:checked+label {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+  }
+
+  input[type=radio].gas:checked+label {
+    background-color: $orange;
+    border-color: $orange;
+  }
+
+}

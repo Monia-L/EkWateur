@@ -1,14 +1,22 @@
 //theme
+@import '../styles/theme/general.scss';
 @import '../styles/theme/colors.scss';
-
-// variables
 @import '../styles/theme/breakpoint.scss';
 
-// style components
+//user
 @import '../styles/components/User/detail.scss';
-@import '../styles/components/toggle-switch.scss';
-@import '../styles/components/table.scss';
+
+//button
+@import '../styles/components/Button/button-disconnect.scss';
+@import '../styles/components/Button/button-enter.scss';
+@import '../styles/components/Button/button-connection.scss';
+
+//table
+@import '../styles/components/Table/toggle-switch.scss';
+@import '../styles/components//Table/table.scss';
 
 //style pages
 @import '../styles/pages/home.scss';
 @import '../styles/pages/detail.scss';
+@import '../styles/pages/no-found.scss';
+@import '../styles/pages/logout.scss';

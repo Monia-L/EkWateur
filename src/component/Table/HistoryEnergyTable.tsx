@@ -30,7 +30,9 @@ const HistoryEnergyTable = (props: HistoryEnergyTableProps) => {
                 <tr key={index}>
                   <td>{moment(detailEnergy.createdAt).format("DD/MM/YYYY")}</td>
                   <td>{detailEnergy.indexHigh}</td>
-                  <td>{detailEnergy?.indexLow}</td>
+                  <td>
+                    {detailEnergy.indexLow ? detailEnergy.indexLow : "ʕᵔᴥᵔʔ"}
+                  </td>
                 </tr>
               ))}
             </tbody>

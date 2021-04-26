@@ -1,7 +1,7 @@
 import React from "react";
 
 interface ToggleSwitchProps {
-  switchTypeOfEnergy: (event: any) => void;
+  switchTypeOfEnergy: (event: React.MouseEvent<HTMLInputElement>) => void;
 }
 
 const ToggleSwitch = (props: ToggleSwitchProps) => {
@@ -9,14 +9,13 @@ const ToggleSwitch = (props: ToggleSwitchProps) => {
 
   return (
     <>
-      <form noValidate>
+      <div className="toggle__container">
         <input
           className="demo2 electricity"
           onClick={switchTypeOfEnergy}
           type="radio"
           name="nameOfEnergy"
           value="electricity"
-          checked
         />
         <label htmlFor="electricity">Electricité</label>
 
@@ -25,10 +24,10 @@ const ToggleSwitch = (props: ToggleSwitchProps) => {
           type="radio"
           name="nameOfEnergy"
           value="gas"
-          onChange={switchTypeOfEnergy}
+          onClick={switchTypeOfEnergy}
         />
         <label htmlFor="gas">Gaz</label>
-      </form>
+      </div>
     </>
   );
 };

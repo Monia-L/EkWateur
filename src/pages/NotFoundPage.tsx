@@ -3,10 +3,12 @@ import React from "react";
 const NotFoundPage = () => {
   return (
     <>
-      <p>Oups</p>
-      <a href="/" className="button--more-details">
-        Go !
-      </a>
+      <main className="no-found-page__container">
+        <h1>Oups ! </h1>
+        <a href="/" className="button--more-details">
+          Go !
+        </a>
+      </main>
     </>
   );
 };
