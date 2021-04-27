@@ -1,0 +1,23 @@
+ .button__more-details__container {
+   margin: 0 2rem;
+
+   .button__more-details {
+     display: inline-block;
+     padding: 0.5em 1.5em;
+     border: 0.16em solid $alternate-hover-color;
+     margin: 0 0.3em 3em 0;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-weight: 400;
+     color: $alternate-hover-color;
+     text-align: center;
+     transition: all 0.15s;
+     box-shadow: 0 14px 20px 0 $grey;
+
+
+     &:hover {
+       color: $button-secondary-color-hover;
+       border-color: $button-secondary-color-hover;
+     }
+   }
+ }

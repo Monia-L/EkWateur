@@ -1,8 +1,20 @@
-.button--connection {
-  text-decoration: none;
-  margin-top: 0;
-  font-size: 1.4rem;
-  color: $alternate-color;
-  display: inline-block;
+.button-connection__container {
+  margin: 0 0 2rem;
+
+  .button--connection {
+    text-decoration: none;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $alternate-hover-color;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      color: $bg-alternate-color;
+      border-color: $bg-alternate-color;
+    }
+  }
+
   cursor: pointer;
 }

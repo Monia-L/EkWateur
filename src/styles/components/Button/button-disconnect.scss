@@ -1,8 +1,20 @@
-.button--disconnect {
-  text-decoration: none;
-  margin-top: 0;
-  font-size: 1.4rem;
-  color: $alternate-color;
-  display: inline-block;
-  cursor: pointer;
+.button-disconnect__container {
+  margin: 0 0 2rem;
+
+  .button--disconnect {
+    text-decoration: none;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $button-secondary-color-hover;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      color: $alternate-hover-color;
+      border-color: $alternate-hover-color;
+    }
+  }
+
+
 }

@@ -1,45 +1,49 @@
-import React from "react";
-import { DetailsEnergieModel } from "../../pages/DetailsPage";
+import * as React from "react";
+import { DataGrid } from "@material-ui/data-grid";
 import moment from "moment";
+import { DetailsEnergieModel } from "../../pages/DetailsPage";
 
-interface HistoryEnergyTableProps {
-  dataOfEnergy?: DetailsEnergieModel[];
-  sortBy: (key: string) => void;
+interface TableProps {
+  dataOfEnergy: DetailsEnergieModel[];
   title: string;
 }
-const HistoryEnergyTable = (props: HistoryEnergyTableProps) => {
-  const { dataOfEnergy, sortBy, title } = props;
+interface Column {
+  field: string;
+  headerName?: string;
+  flex?: number;
+  hide?: boolean;
+}
+
+const HistoryEnergyTable = (props: TableProps) => {
+  const { dataOfEnergy, title } = props;
+
+  const columns: Column[] = [
+    { field: "id", hide: true },
+    { field: "createdAt", headerName: "Date", flex: 1 },
+    { field: "indexHigh", headerName: "Index HP", flex: 1 },
+    { field: "indexLow", headerName: "Index HC", flex: 1 },
+  ];
+
+  //Change the date in object data with moment
+  const rows = dataOfEnergy.map((detailEnergy: DetailsEnergieModel) => {
+    detailEnergy.createdAt = moment(detailEnergy.createdAt).format(
+      "DD/MM/YYYY"
+    );
+    detailEnergy.indexLow = detailEnergy.indexLow ? detailEnergy.indexLow : 0;
+
+    return detailEnergy;
+  });
 
   return (
-    <>
-      {dataOfEnergy!.length > 0 && (
-        <div className="table__container">
-          <div className="table__container__title">
-            <h2>Relevé {title}</h2>
-          </div>
-          <table className="table__container__table">
-            <thead>
-              <tr>
-                <th onClick={() => sortBy("createdAt")}>Date</th>
-                <th onClick={() => sortBy("indexHigh")}>Index HP</th>
-                <th onClick={() => sortBy("indexLow")}>Index HC</th>
-              </tr>
-            </thead>
-            <tbody>
-              {dataOfEnergy?.map((detailEnergy: DetailsEnergieModel, index) => (
-                <tr key={index}>
-                  <td>{moment(detailEnergy.createdAt).format("DD/MM/YYYY")}</td>
-                  <td>{detailEnergy.indexHigh}</td>
-                  <td>
-                    {detailEnergy.indexLow ? detailEnergy.indexLow : "ʕᵔᴥᵔʔ"}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </>
+    <div className="table__container" style={{ height: 400, width: "80%" }}>
+      <p className="table__container__title">Relevé {title}</p>
+      <DataGrid
+        rows={rows}
+        columns={columns}
+        hideFooterRowCount={true}
+        hideFooterSelectedRowCount={true}
+      />
+    </div>
   );
 };
 export default HistoryEnergyTable;

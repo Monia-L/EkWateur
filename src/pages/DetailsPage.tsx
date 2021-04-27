@@ -19,9 +19,7 @@ const DetailsPage = () => {
   const [detailsOfEnergy, setDetailsOfEnergy] = useState<DetailsEnergieModel[]>(
     []
   );
-  const [dataEnergySort, setDataEnergySort] = useState<DetailsEnergieModel[]>(
-    []
-  );
+
   const titleTable = typeOfEnergy === "electricity" ? " électrique" : "gaz";
 
   // axios the api
@@ -36,11 +34,6 @@ const DetailsPage = () => {
     setDetailsOfEnergy(data);
   };
 
-  const sortBy = (key: string) => {
-    const data = detailsOfEnergy.sort((a: any, b: any) => b[key] - a[key]);
-    setDataEnergySort(data);
-  };
-
   useEffect(() => {
     getHistoryOfEnergies();
   }, [typeOfEnergy]);
@@ -49,17 +42,12 @@ const DetailsPage = () => {
     <>
       <main className="details-page__container">
         <ButtonDisconnect />
-
-        <HistoryEnergyTable
-          dataOfEnergy={detailsOfEnergy}
-          sortBy={sortBy}
-          title={titleTable}
-        />
         <ToggleSwitch
           switchTypeOfEnergy={(event) =>
             setTypeOfEnergy((event.target as HTMLInputElement).value)
           }
         />
+        <HistoryEnergyTable dataOfEnergy={detailsOfEnergy} title={titleTable} />
       </main>
     </>
   );

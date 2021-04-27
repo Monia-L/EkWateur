@@ -11,7 +11,7 @@ const ToggleSwitch = (props: ToggleSwitchProps) => {
     <>
       <div className="toggle__container">
         <input
-          className="demo2 electricity"
+          className="electricity"
           onClick={switchTypeOfEnergy}
           type="radio"
           name="nameOfEnergy"
@@ -20,11 +20,12 @@ const ToggleSwitch = (props: ToggleSwitchProps) => {
         <label htmlFor="electricity">Electricité</label>
 
         <input
-          className="demo2 gas"
+          className="gas"
           type="radio"
           name="nameOfEnergy"
           value="gas"
           onClick={switchTypeOfEnergy}
+          defaultChecked
         />
         <label htmlFor="gas">Gaz</label>
       </div>

@@ -1,8 +1,9 @@
 .details__user__container {
   position: relative;
+  margin: 2rem;
 
   .head_role {
-    background-color: $orange;
+    background-color: $accent-color;
     color: $white;
     text-align: center;
   }
@@ -25,15 +26,25 @@
       height: 100%;
       background-color: #fff;
       left: 288px;
-      top: 55px;
+      top: 58px;
       position: absolute;
 
+      @include laptop {
+        left: 276px;
+        top: 37px;
+      }
+
       .avatar {
-        height: 6.8rem;
-        width: 6.8rem;
+        height: 3.8rem;
+        width: 3.8rem;
         overflow: hidden;
         border: 5px solid $accent-hover-color;
         -webkit-border-radius: 60px;
+
+        @include laptop {
+          height: 6.8rem;
+          width: 6.8rem;
+        }
       }
     }
   }
