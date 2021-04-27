@@ -1,7 +1,7 @@
 .details__user__container {
   position: relative;
   margin: 2rem;
-  width: 420px;
+  width: 23rem;
 
   .head_role {
     background-color: $accent-color;
@@ -26,21 +26,21 @@
       width: 100%;
       height: 100%;
       background-color: $primary-invert;
-      left: 288px;
-      top: 58px;
+      left: 18rem;
+      top: 3.625rem;
       position: absolute;
 
       @include laptop {
-        left: 276px;
-        top: 55px;
+        left: 17.25rem;
+        top: 3.438rem;
       }
 
       .avatar {
         height: 3.8rem;
         width: 3.8rem;
         overflow: hidden;
-        border: 5px solid $alternate-hover-color;
-        -webkit-border-radius: 60px;
+        border: .313rem solid $alternate-hover-color;
+        -webkit-border-radius: 3.75rem;
 
         @include laptop {
           height: 6.8rem;

@@ -1,13 +1,12 @@
 .logout-page__container {
   background: url("../../asset/img/bye.png") no-repeat center $disable-color;
   background-position: 50% 10%;
-  min-width: 400px;
+  min-width: 25rem;
   min-height: 60rem;
   background-size: auto 70%;
 
   @include laptop {
     background-size: auto 100%;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
