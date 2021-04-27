@@ -1,13 +1,12 @@
 import React from "react";
+import ButtonConnection from "../component/ButtonConnection";
 
 const NotFoundPage = () => {
   return (
     <>
       <main className="no-found-page__container">
-        <h1>Oups ! </h1>
-        <a href="/" className="button--more-details">
-          Go !
-        </a>
+        <h1 className="text">Oups ! </h1>
+        <ButtonConnection />
       </main>
     </>
   );

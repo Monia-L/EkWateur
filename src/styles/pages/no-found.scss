@@ -1,4 +1,22 @@
 .no-found-page__container {
-  background-image: url("../../asset/img/404.png");
-  height: 100vh;
+  background: url("../../asset/img/404.png") no-repeat center;
+  background-position: 50% 10%;
+  min-width: 400px;
+  min-height: 60rem;
+  background-size: auto 60%;
+
+  @include laptop {
+    background-size: auto 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .text {
+    font-weight: 100;
+    font-size: 3.4rem;
+    color: $alternate-color;
+  }
 }

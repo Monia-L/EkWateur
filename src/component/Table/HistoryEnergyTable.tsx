@@ -21,7 +21,12 @@ const HistoryEnergyTable = (props: TableProps) => {
     { field: "id", hide: true },
     { field: "createdAt", headerName: "Date", flex: 1 },
     { field: "indexHigh", headerName: "Index HP", flex: 1 },
-    { field: "indexLow", headerName: "Index HC", flex: 1 },
+    {
+      field: "indexLow",
+      headerName: "Index HC",
+      flex: 1,
+      hide: title === "gaz" ? true : false,
+    },
   ];
 
   //Change the date in object data with moment
@@ -29,8 +34,6 @@ const HistoryEnergyTable = (props: TableProps) => {
     detailEnergy.createdAt = moment(detailEnergy.createdAt).format(
       "DD/MM/YYYY"
     );
-    detailEnergy.indexLow = detailEnergy.indexLow ? detailEnergy.indexLow : 0;
-
     return detailEnergy;
   });
 
