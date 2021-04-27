@@ -1,5 +1,4 @@
 import React from "react";
-import myPic from "../../asset/img/pic_Monia-LAOUFI.png";
 
 const DetailsUser = () => {
   return (

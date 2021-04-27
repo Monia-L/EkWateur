@@ -1,26 +1,25 @@
 .table__container {
-  max-width: 500px;
-  width: 80%;
+  max-width: 650px;
   margin: 0 auto 40px;
   border-radius: 10px;
-  box-shadow: 10px 5px 32px $grey;
+  box-shadow: 10px 5px 32px $primary-color;
 
   &__title {
-    background-color: $grey-dark;
-    color: black;
+    background-color: $button-secondary-color-hover;
+    color: $primary-invert;
     text-align: center;
     padding: 14px;
     margin: 0 auto;
-    border-bottom: .1rem solid $white;
+    border-bottom: .1rem solid $primary-invert;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: bold;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
 
   .MuiDataGrid-cellLeft,
   .MuiDataGrid-colCell {
-    border-right: .1rem solid $white;
+    border-right: .1rem solid $primary-invert;
   }
 
   .MuiDataGrid-iconSeparator {

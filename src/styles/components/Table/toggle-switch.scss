@@ -13,7 +13,7 @@
     font-size: 1.25rem;
     line-height: 1.5;
     border-radius: 0.3rem;
-    color: $white;
+    color: $primary-invert;
     background-color: $button-pro-color;
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
@@ -22,19 +22,19 @@
     &:hover {
       background-color: $button-pro-color;
       border-color: $button-pro-color;
-      color: $white;
+      color: $primary-invert;
     }
   }
 
   input[type=radio].electricity:checked+label {
-    background-color: $green;
-    border-color: $green;
-    color: $white;
+    background-color: $alternate-color;
+    border-color: $alternate-color;
+    color: $primary-invert;
   }
 
   input[type=radio].gas:checked+label {
-    background-color: $orange;
-    border-color: $orange;
+    background-color: $alternate-color;
+    border-color: $alternate-color;
   }
 
 }

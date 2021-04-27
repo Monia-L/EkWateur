@@ -1,10 +1,11 @@
 .details__user__container {
   position: relative;
   margin: 2rem;
+  width: 420px;
 
   .head_role {
     background-color: $accent-color;
-    color: $white;
+    color: $primary-invert;
     text-align: center;
   }
 
@@ -24,21 +25,21 @@
     .details__user__progress__img {
       width: 100%;
       height: 100%;
-      background-color: #fff;
+      background-color: $primary-invert;
       left: 288px;
       top: 58px;
       position: absolute;
 
       @include laptop {
         left: 276px;
-        top: 37px;
+        top: 55px;
       }
 
       .avatar {
         height: 3.8rem;
         width: 3.8rem;
         overflow: hidden;
-        border: 5px solid $accent-hover-color;
+        border: 5px solid $alternate-hover-color;
         -webkit-border-radius: 60px;
 
         @include laptop {
@@ -59,7 +60,7 @@
       margin-top: .3rem;
       max-width: 100%;
       font-size: 1.4rem;
-      color: $grey;
+      color: $primary-color;
       line-height: 1.3em;
       position: relative;
       font-weight: 400;
