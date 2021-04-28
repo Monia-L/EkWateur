@@ -9,14 +9,12 @@ import NotFoundPage from "../pages/NotFoundPage";
 const GlobalRouter = () => {
   return (
     <BrowserRouter>
-      <>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/details" component={Details} />
-          <Route exact path="/logout" component={Logout} />
-          <Route path="/" component={NotFoundPage} />
-        </Switch>
-      </>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/details" component={Details} />
+        <Route exact path="/logout" component={Logout} />
+        <Route path="/" component={NotFoundPage} />
+      </Switch>
     </BrowserRouter>
   );
 };

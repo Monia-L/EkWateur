@@ -39,17 +39,15 @@ const DetailsPage = () => {
   }, [typeOfEnergy]);
 
   return (
-    <>
-      <main className="details-page__container">
-        <ButtonDisconnect />
-        <ToggleSwitch
-          switchTypeOfEnergy={(event) =>
-            setTypeOfEnergy((event.target as HTMLInputElement).value)
-          }
-        />
-        <HistoryEnergyTable dataOfEnergy={detailsOfEnergy} title={titleTable} />
-      </main>
-    </>
+    <main className="details-page__container">
+      <ButtonDisconnect />
+      <ToggleSwitch
+        switchTypeOfEnergy={(event) =>
+          setTypeOfEnergy((event.target as HTMLInputElement).value)
+        }
+      />
+      <HistoryEnergyTable dataOfEnergy={detailsOfEnergy} title={titleTable} />
+    </main>
   );
 };
 export default DetailsPage;

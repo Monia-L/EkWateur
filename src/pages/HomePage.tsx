@@ -5,13 +5,11 @@ import DetailsUser from "../component/User/DetailsUser";
 
 const Home = () => {
   return (
-    <>
-      <main className="home-page__container">
-        <DetailsUser />
-        <ButtonMoreDetails />
-        <ButtonDisconnect />
-      </main>
-    </>
+    <main className="home-page__container">
+      <DetailsUser />
+      <ButtonMoreDetails />
+      <ButtonDisconnect />
+    </main>
   );
 };
 
