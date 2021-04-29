@@ -1,10 +1,10 @@
 import * as React from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import moment from "moment";
-import { DetailsEnergieModel } from "../../pages/DetailsPage";
+import { EnergyDetailsModel } from "../../pages/DetailsPage";
 
 interface TableProps {
-  dataOfEnergy: DetailsEnergieModel[];
+  dataOfEnergy: EnergyDetailsModel[];
   title: string;
 }
 interface Column {
@@ -30,7 +30,7 @@ const HistoryEnergyTable = (props: TableProps) => {
   ];
 
   //Change the date in object data with moment
-  const rows = dataOfEnergy.map((detailEnergy: DetailsEnergieModel) => {
+  const rows = dataOfEnergy.map((detailEnergy: EnergyDetailsModel) => {
     detailEnergy.createdAt = moment(detailEnergy.createdAt).format(
       "DD/MM/YYYY"
     );

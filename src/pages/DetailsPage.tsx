@@ -6,7 +6,7 @@ import ToggleSwitch from "../component/Table/ToggleSwitch";
 import ButtonDisconnect from "../component/ButtonDisconnect";
 
 // typing of the data received by the api
-export interface DetailsEnergieModel {
+export interface EnergyDetailsModel {
   id: string;
   meterId: string;
   createdAt: string;
@@ -16,7 +16,7 @@ export interface DetailsEnergieModel {
 }
 const DetailsPage = () => {
   const [typeOfEnergy, setTypeOfEnergy] = useState<string>("");
-  const [detailsOfEnergy, setDetailsOfEnergy] = useState<DetailsEnergieModel[]>(
+  const [detailsOfEnergy, setDetailsOfEnergy] = useState<EnergyDetailsModel[]>(
     []
   );
 
